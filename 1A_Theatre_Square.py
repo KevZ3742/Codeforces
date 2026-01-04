@@ -1,4 +1,5 @@
 # https://codeforces.com/problemset/problem/1/A
+# rating: 1000
 
 import math
 
