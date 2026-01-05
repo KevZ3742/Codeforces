@@ -8,7 +8,6 @@ string = string.lower()
 vowels = "aeiouy"
 for char in vowels:
     if char in string:
-
         string = string.replace(char, "")
 
 string = list(string)
