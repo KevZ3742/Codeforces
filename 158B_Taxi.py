@@ -4,7 +4,6 @@
 from collections import Counter
 
 count = int(input())
-
 groups = Counter(map(int, input().split()))
 
 cars = 0
