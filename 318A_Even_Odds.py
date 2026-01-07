@@ -3,7 +3,7 @@
 
 n, k = map(int, input().split())
 
-k += 1
+k -= 1
 evenStartIndex = 0
 
 if n % 2 == 0:
@@ -11,6 +11,9 @@ if n % 2 == 0:
 else:
     evenStartIndex = n // 2 + 1
 
-toPrint = k - evenStartIndex
+if k < evenStartIndex:
+    print(k * 2) - 1
+else:
+    print(k * 2) - n
 
 # wip
