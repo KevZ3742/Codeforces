@@ -12,9 +12,4 @@ for char in vowels:
 
 string = list(string)
 
-counter = 0
-for i in range(len(string)):
-    string.insert(i+counter, ".")
-    counter += 1
-
-print(''.join(string))
+print('.' + '.'.join(string))
