@@ -6,21 +6,18 @@ t = int(input())
 for _ in range(t):
     n, k = map(int, input().split())
 
-    if k > n:
+    found = False
+    add = 0
+    for i in range(30):
+        if n == k or n + add == k:
+            found = True
+            print(i)
+            break
+
+        if n & 1:
+            add = 1
+
+        n = n >> 1
+
+    if found == False:
         print(-1)
-        continue
-
-    if k == n:
-        print(0)
-        continue
-
-    splits = [n]
-
-    if n % 2 == 0:
-        splits.add(n // 2)
-    else:
-        splits.add(n // 2)
-        splits.add(n // 2 + 1)
-    
-# wip
-        
