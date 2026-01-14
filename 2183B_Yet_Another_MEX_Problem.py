@@ -13,8 +13,6 @@ for i in range(testCases):
     for _ in a:
         count[_] += 1
 
-    print(count)
-
     for _ in range(k-1):
         if not count[_]:
             mex = _
