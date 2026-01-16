@@ -3,4 +3,10 @@
 
 k, r = map(int, input().split())
 
-# wip
+shovelCount = 1
+while shovelCount * k % 10 != r:
+    if shovelCount * k % 10 == 0:
+        break
+    shovelCount += 1
+
+print(shovelCount)
