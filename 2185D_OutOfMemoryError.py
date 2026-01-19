@@ -8,16 +8,28 @@ for _ in range(t):
     a = list(map(int, input().split()))
     
     arr = a.copy()
+    lastUpdate = [-1] * n
+    lastReset = -1
 
     for i in range(m):
         b, c = map(int, input().split())
         b -= 1
 
+        if lastUpdate[b] <= lastReset:
+            arr[b] = a[b]
+
         arr[b] += c
 
+        lastUpdate[b] = i
+
         if arr[b] > h:
-            arr = a.copy()
+            lastReset = i
 
-    print(*arr)
-
-# tle
+    toPrint = []
+    for i in range(n):
+        if lastUpdate[i] > lastReset:
+            toPrint.append(arr[i])
+        else:
+            toPrint.append(a[i])
+    
+    print(*toPrint)
