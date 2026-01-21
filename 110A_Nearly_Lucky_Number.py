@@ -1,7 +1,7 @@
 # https://codeforces.com/problemset/problem/110/A
 # rating: 800
 
-n = int(input())
+n = input()
 
 def isLucky(i):
     i = str(i)
@@ -10,7 +10,12 @@ def isLucky(i):
             return False
     return True
 
-if isLucky(len(str(n))):
+count = 0
+for c in n:
+    if c in "47":
+        count += 1
+
+if isLucky(count):
     print("YES")
 else:
     print("NO")
