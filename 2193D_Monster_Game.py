@@ -8,29 +8,17 @@ for _ in range(t):
     a = list(map(int, input().split()))
     b = list(map(int, input().split()))
 
-    a.sort()
+    a.sort(reverse=True)
     
-    swordsNeeded = [0] * (n + 1)
-    swordsNeeded[0] = 0
-    for i in range(1, n + 1):
-        swordsNeeded[i] = swordsNeeded[i - 1] + b[i - 1]
-
+    level = 0
+    swordsNeeded = 0
     score = 0
 
-    difficulties = sorted(set(a))
-    for difficulty in difficulties:
-        swordsAvailable = sum(sword >= difficulty for sword in a)
+    for i in range(1, n + 1):
+        while level < n and swordsNeeded + b[level] <= i:
+            swordsNeeded += b[level]
+            level += 1
 
-        levels = 0
-        for i in range(n + 1):
-            
-            if swordsNeeded[i] <= swordsAvailable:
-                levels = i
-            else:
-                break
-
-        score = max(difficulty * levels, score)
+        score = max(score, a[i - 1] * level)
 
     print(score)
-
-# tle
