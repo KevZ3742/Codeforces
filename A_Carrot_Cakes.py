@@ -5,7 +5,6 @@ import math
 
 n, t, k, d = map(int, input().split())
 
-
 timeNoOven = 0
 timeNoOven = math.ceil(n / k)
 timeNoOven *= t
