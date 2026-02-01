@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/731/problem/A
 # rating: 800
 
 name = str(input())

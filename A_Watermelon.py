@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/4/A
 # rating: 800
 
 weight = int(input())

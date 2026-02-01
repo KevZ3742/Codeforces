@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/32/B
 # rating: 800
 
 s = str(input())

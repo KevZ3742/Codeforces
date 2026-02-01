@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/122/A
 # rating: 1000
 
 n = int(input())

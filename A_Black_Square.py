@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/431/problem/A
 # rating: 800
 
 a = list(map(str, input().split()))

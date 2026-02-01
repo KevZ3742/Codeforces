@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/1520/D
 # rating: 1200
 
 t = int(input())

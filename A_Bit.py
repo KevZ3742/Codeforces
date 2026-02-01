@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/282/A
 # rating: 800
 
 count = int(input())

@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/443/problem/A
 # rating: 800
 
 letters = str(input())

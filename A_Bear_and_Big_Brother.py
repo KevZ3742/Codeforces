@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/791/A
 # rating: 800
 
 limak, bob = map(int, input().split())

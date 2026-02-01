@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/133/A
 # rating: 900
 
 p = str(input())

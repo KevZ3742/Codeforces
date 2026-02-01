@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/2183/problem/A
 # rating: ?
 
 testCases = int(input())

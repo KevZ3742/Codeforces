@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/686/problem/A
 # rating: 800
 
 n, x = map(int, input().split())

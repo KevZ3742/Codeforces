@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/151/A
 # rating: 800
 
 n, k, l, c, d, p, nl, np = map(int, input().split())

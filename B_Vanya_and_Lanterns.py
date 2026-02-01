@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/492/B
 # rating: 1200
 
 data = list(map(int, input().split()))

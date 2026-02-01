@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/158/A
 # rating: 800
 
 contestants = str(input())

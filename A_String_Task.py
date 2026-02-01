@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/118/A
 # rating: 1000
 
 string = str(input())

@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/224/A
 # rating: 1100
 
 areas = list(map(int, input().split()))

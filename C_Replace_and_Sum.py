@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/2193/problem/C
 # rating: ?
 
 t = int(input())

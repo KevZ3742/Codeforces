@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/996/A
 # rating: 800
 
 balance = int(input())

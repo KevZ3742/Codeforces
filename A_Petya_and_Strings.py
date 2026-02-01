@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/112/A
 # rating: 800
 
 str1 = str(input()).lower()

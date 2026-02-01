@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/236/A
 # rating: 800
 
 uniqueChars = set(list(str(input())))

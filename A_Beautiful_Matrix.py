@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/263/A
 # 800
 
 moves = 0

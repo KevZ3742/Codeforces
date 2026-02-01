@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/141/A
 # rating: 800
 
 from collections import Counter

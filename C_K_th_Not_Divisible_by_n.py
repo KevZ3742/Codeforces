@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/1352/C
 # rating: 1200
 
 def getNumMultiples(n, max):

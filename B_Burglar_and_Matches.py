@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/16/problem/B
 # rating: 900
 
 from collections import defaultdict

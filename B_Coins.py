@@ -1,4 +1,3 @@
-# http://codeforces.com/contest/47/problem/B
 # rating: 1200
 
 combinations = ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]

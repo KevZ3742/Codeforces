@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/148/A
 # rating: 800
 
 k = int(input())

@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/546/A
 # rating: 800
 
 k, n, w = map(int, input().split())

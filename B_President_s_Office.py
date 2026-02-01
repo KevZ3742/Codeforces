@@ -1,4 +1,3 @@
-# https://codeforces.com/contest/6/problem/B
 # rating: 1100
 
 n, m, c = input().split()

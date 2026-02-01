@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/271/A
 # rating: 800
 
 y = int(input())

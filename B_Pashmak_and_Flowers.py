@@ -1,4 +1,3 @@
-# https://codeforces.com/problemset/problem/459/B
 # rating: 1300
 
 import math
