@@ -1,4 +1,4 @@
-# rating: ?
+# rating: 1100
 
 t = int(input())
 
