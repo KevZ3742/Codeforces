@@ -1,4 +1,4 @@
-# rating: ?
+# rating: 1500
 
 testCases = int(input())
 
