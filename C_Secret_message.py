@@ -17,31 +17,26 @@ for _ in range(t):
         cols.append(col)
 
     periods = []
-    for i in range(1, n + 1):
+    for i in range(1, int(n ** .5) + 1):
         if n % i == 0:
             periods.append(i)
+            if i != n // i:
+                periods.append(n // i)
+    periods.sort()
 
     for p in periods:
         flag = True
-        toPrint = ""
+        toPrint = []
 
-        for j in range(p):
-            group = []
-            for i in range(j, n, p):
-                group.append(cols[i])
-
-            common = set.intersection(*group)
+        for i in range(p):
+            common = set.intersection(*cols[i:n:p])
             
             if not common:
                 flag = False
                 break
 
-            toPrint += next(iter(common))
+            toPrint.append(next(iter(common)))
 
-        if not flag:
-            continue
-
-        print(toPrint * (n // p))
-        break
-
-# tle
+        if flag:
+            print("".join(toPrint) * (n // p))
+            break
