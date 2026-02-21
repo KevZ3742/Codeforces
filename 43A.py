@@ -1,3 +1,5 @@
+# A. Football
+# https://codeforces.com/problemset/problem/43/A
 # rating: 1000
 
 from collections import defaultdict

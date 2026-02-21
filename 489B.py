@@ -1,0 +1,26 @@
+# B. BerSU Ball
+# https://codeforces.com/contest/489/problem/B
+# rating: 1200
+
+n = int(input())
+a = list(map(int, input().split()))
+m = int(input())
+b = list(map(int, input().split()))
+
+a.sort()
+b.sort()
+
+i, j = 0, 0
+pairs = 0
+
+while i < n and j < m:
+    if abs(a[i] - b[j]) <= 1:
+        pairs += 1
+        i += 1
+        j += 1
+    elif a[i] < b[j]:
+        i += 1
+    else:
+        j += 1
+
+print(pairs)
