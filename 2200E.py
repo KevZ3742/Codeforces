@@ -2,33 +2,30 @@
 # https://codeforces.com/contest/2200/problem/E
 # rating: ?
 
-def sieveOfEratosthenes(n: int):
-    """
-    Computes all prime numbers up to n using the Sieve of Eratosthenes.
+import math
 
-    The sieve works by iteratively marking the multiples of each prime number
-    starting from 2. Any number that remains unmarked is prime.
+def primeFactorization(n):
+    factors = set()
 
-    Args:
-        n (int): The inclusive upper bound. Finds all primes in range [2, n].
+    while n % 2 == 0:
+        factors.add(2)
+        n //= 2
 
-    Returns:
-        tuple: A tuple containing:
-            - primes (list[int]): All prime numbers <= n in ascending order.
-            - isPrime (list[bool]): Boolean list of length n+1 where isPrime[x]
-              is True if x is prime, False otherwise.
-    """
+    for i in range(3, int(math.sqrt(n)) + 1, 2):
+        while n % i == 0:
+            factors.add(i)
+            n //= i
 
-    primes = []
-    isPrime = [True] * (n + 1)
-    for p in range(2, int(n ** .5) + 1):
-        if isPrime[p]:
-            primes.append(p)
-        
-            for i in range(p * p, n + 1, p):
-                isPrime[i] = False
+    if n > 2:
+        factors.add(n)
+
+    if len(factors) > 1:
+        return -1
     
-    return primes, isPrime
+    if len(factors) == 0:
+        return 1
+    
+    return factors.pop()
 
 t = int(input())
 
@@ -36,22 +33,17 @@ for _ in range(t):
     n = int(input())
     a = list(map(int, input().split()))
 
-    primes, isPrime = sieveOfEratosthenes(max(a))
-
-    alice = True
-    allPrime = False
-
-    while not allPrime:
-        temp = a
-        for num in a:
-            if isPrime[num]:
-                temp.append(num)
-            else:
-                # temp.append() divisors if number of divisor
-                pass
-
-    
     if a == sorted(a):
+        print("Bob")
+        continue
+
+    factors = []
+    for element in a:
+        factors.append(primeFactorization(element))
+
+    if min(factors) == -1:
+        print("Alice")
+    elif factors == sorted(factors):
         print("Bob")
     else:
         print("Alice")
