@@ -9,7 +9,7 @@ for _ in range(t):
     p = list(map(int, input().split()))
     
     mid = p[x:y]
-    mid = mid[min(mid):] + mid[:min(mid)]
+    mid = mid[mid.index(min(mid)):] + mid[:mid.index(min(mid))]
 
     outer = p[:x] + p[y:]
 
@@ -17,7 +17,12 @@ for _ in range(t):
         print(*mid)
         continue
     
+    flag = False
     for i in range(len(outer)):
         if outer[i] > mid[0]:
             print(*(outer[:i] + mid + outer[i:]))
-            continue
+            flag = True
+            break
+    
+    if not flag:
+        print(*(outer + mid))
