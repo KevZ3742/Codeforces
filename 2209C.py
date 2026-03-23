@@ -2,36 +2,35 @@
 # https://codeforces.com/contest/2209/problem/C
 # rating: ?
 
-import sys
-input = sys.stdin.readline
-
-def query(i, j):
-    print(f"? {i} {j}", flush=True)
-    response = int(input())
-
-    if response == -1:
-        sys.exit()
-        
-    return response
-
 t = int(input())
+
 for _ in range(t):
     n = int(input())
     
-    counter = 1
-    found = False
+    toPrint = -1
+    
+    for i in range(2, n + 1):
+        print("?", 2 * i - 1, 2 * i, flush = True)
+        output = int(input())
 
-    for i in range(2, n + 2):
-        response = query(counter, i)
-
-        if response == 1:
-            print(f"! {counter}", flush=True)
-            found = True
+        if output:
+            toPrint = 2 * i
             break
+    else:
+        print("?", 1, 3, flush = True)
+
+        output = int(input())
+
+        if output:
+            toPrint = 1
         else:
-            counter = i
+            print("?", 1, 4, flush = True)
 
-    if not found:
-        print(f"! {counter}", flush=True)
+            output = int(input())
 
-# wa
+            if output:
+                toPrint = 1
+            else:
+                toPrint = 2
+
+    print("!", toPrint, flush=True)

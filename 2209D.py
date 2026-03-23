@@ -6,32 +6,46 @@ t = int(input())
  
 for _ in range(t):
     r, g, b = map(int, input().split())
- 
-    v = sorted([('R',r),('G',g),('B',b)], key=lambda x: x[1], reverse=True)
-    colorA, countA = v[0]
-    colorB, countB = v[1]
-    colorC, countC = v[2]
- 
-    countA = min(countA, countB + countC + 1)
-    toPrint = ""
- 
-    for i in range(countB):
-        if countA > 0:
-            toPrint += colorA
-            countA -= 1
-        
-        toPrint += colorB
- 
-    for i in range(countC):
-        if countA > 0:
-            toPrint += colorA
-            countA -= 1
-        
-        toPrint += colorC
- 
-    if countA > 0:
-        toPrint += colorA
- 
-    print(toPrint)
 
-# wa
+    toPrint = []
+
+    counter = {"R": r, "G": g, "B": b}
+    prev = ["", "", ""]
+    states = {"R": True, "G": True, "B": True}
+
+    if counter["R"] == 0:
+        states["R"] = False
+
+    if counter["G"] == 0:
+        states["G"] = False
+
+    if counter["B"] == 0:
+        states["B"] = False
+    
+    while states["R"] or states["G"] or states["B"]:
+        canUse = [key for key, value in states.items() if value is True]
+        toUse = max(canUse, key=lambda k: (counter[k], k == prev[1]))
+
+        toPrint.append(toUse)
+        counter[toUse] -= 1
+
+        states = {"R": True, "G": True, "B": True}
+
+        prev[2] = prev[1]
+        prev[1] = prev[0]
+        prev[0] = toUse
+
+        states[prev[0]] = False
+        states[prev[1]] = True
+        states[prev[2]] = False
+
+        if counter["R"] == 0:
+            states["R"] = False
+
+        if counter["G"] == 0:
+            states["G"] = False
+
+        if counter["B"] == 0:
+            states["B"] = False
+
+    print("".join(toPrint))
