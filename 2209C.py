@@ -18,14 +18,12 @@ for _ in range(t):
             break
     else:
         print("?", 1, 3, flush = True)
-
         output = int(input())
 
         if output:
             toPrint = 1
         else:
             print("?", 1, 4, flush = True)
-
             output = int(input())
 
             if output:
