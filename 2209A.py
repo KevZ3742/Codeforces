@@ -3,6 +3,7 @@
 # rating: ?
 
 t = int(input())
+
 for _ in range(t):
     n, c, k = map(int, input().split())
     a = sorted(map(int, input().split()))
