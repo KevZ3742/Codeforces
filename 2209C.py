@@ -31,4 +31,4 @@ for _ in range(t):
             else:
                 toPrint = 2
 
-    print("!", toPrint, flush=True)
+    print("!", toPrint, flush = True)
