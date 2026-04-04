@@ -1,3 +1,7 @@
+# D. The 67th OEIS Problem
+# https://codeforces.com/contest/2218/problem/D
+# rating: 800
+
 def sieveOfEratosthenes(n: int):
     """
     Computes all prime numbers up to n using the Sieve of Eratosthenes.
@@ -30,8 +34,15 @@ def sieveOfEratosthenes(n: int):
     
     return primes, isPrime
 
-# example usage
-primes, isPrime = sieveOfEratosthenes(100)
+primes, _ = sieveOfEratosthenes(10 ** 6)
 
-print(primes)
-print(isPrime[97])
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+
+    toPrint = [primes[0]]
+    for i in range(1, n):
+        toPrint.append(primes[i - 1] * primes[i])
+
+    print(*toPrint)
