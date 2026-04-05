@@ -7,4 +7,4 @@ t = int(input())
 for _ in range(t):
     a = sorted(map(int, input().split()))
 
-    print(-(sum(a) - a[-1]) + a[-1])
+    print(-sum(a[:-1]) + a[-1])
