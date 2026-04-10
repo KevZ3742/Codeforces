@@ -1,30 +1,27 @@
 # B. Array Craft
 # https://codeforces.com/problemset/problem/1990/B
 # rating: 1200
-
+ 
 t = int(input())
  
 for _ in range(t):
     n, x, y = map(int, input().split())
+    x -= 1
+    y -= 1
  
-    xArr = [-1] * n
-    yArr = [-1] * n
+    l = []
+    temp = -1
+    for i in range(y):
+        l.append(temp)
+        temp *= -1
+    l = l[::-1]
  
-    for i in range(x):
-        xArr[i] = 1
+    m = [1] * (x - y + 1)
  
-    for i in range(n - (y - 1)):
-        yArr[i] = 1
+    r = []
+    temp = -1
+    for i in range(n - x - 1):
+        r.append(temp)
+        temp *= -1
  
-    yArr = yArr[::-1]
- 
-    toPrint = []
-    for i in range(n):
-        if xArr[i] == -1 or yArr[i] == -1:
-            toPrint.append(-1)
-        else:
-            toPrint.append(1)
- 
-    print(*toPrint)
-
-    # wa
+    print(*(l + m + r))
