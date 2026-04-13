@@ -1,6 +1,6 @@
 # C. Secret message
 # https://codeforces.com/contest/2194/problem/C
-# rating: ?
+# rating: 1300
 
 t = int(input())
 

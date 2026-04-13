@@ -1,6 +1,6 @@
 # B. Offshores
 # https://codeforces.com/contest/2194/problem/B
-# rating: ?
+# rating: 1000
 
 t = int(input())
 

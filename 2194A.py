@@ -1,6 +1,6 @@
 # A. Lawn Mower
 # https://codeforces.com/contest/2194/problem/A
-# rating: ?
+# rating: 800
 
 t = int(input())
 
