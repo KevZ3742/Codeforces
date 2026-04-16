@@ -8,11 +8,11 @@ for _ in range(t):
     n = int(input())
     a = list(map(int, input().split()))
 
-    counter = 0
+    toPrint = 0
     mapp = {}
     for i in range(n):
         key = a[i] - i
-        counter += mapp.get(key, 0)
+        toPrint += mapp.get(key, 0)
         mapp[key] = mapp.get(key, 0) + 1
 
-    print(counter)
+    print(toPrint)
