@@ -17,27 +17,19 @@ for i in range(t):
         a = b = 0
         l = 0
         r = n - 1
-        while l < r:
-            if c[l] == c[0] and a != k:
+        while l <= r:
+            if c[l] == c[0]:
                 a += 1
-
-            if c[r] == c[-1] and b != k:
+            if c[r] == c[-1]:
                 b += 1
 
-            if a == k:
-                pass
-            else:
-                l += 1
-
-            if b == k:
-                pass
-            else:
-                r -= 1
-                
-            if a == b == k:
+            if a >= k and b >= k:
+                print("YES")
                 break
 
-        if a >= k and b >= k:
-            print("YES")
+            if a < k:
+                l += 1
+            if b < k:
+                r -= 1
         else:
             print("NO")
