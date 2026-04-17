@@ -1,6 +1,6 @@
 # D. Ghostfires
 # https://codeforces.com/contest/2209/problem/D
-# rating: ?
+# rating: 1800
 
 t = int(input())
  

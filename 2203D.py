@@ -1,6 +1,6 @@
 # D. Divisibility Game
 # https://codeforces.com/contest/2203/problem/D
-# rating: ?
+# rating: 1700
 
 t = int(input())
 

@@ -1,6 +1,6 @@
 # E. The 67th XOR Problem
 # https://codeforces.com/contest/2218/problem/E
-# rating: ?
+# rating: 1200
 
 t = int(input())
 

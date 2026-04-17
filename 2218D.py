@@ -1,6 +1,6 @@
 # D. The 67th OEIS Problem
 # https://codeforces.com/contest/2218/problem/D
-# rating: 800
+# rating: 1100
 
 def sieveOfEratosthenes(n: int):
     """

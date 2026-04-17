@@ -1,6 +1,6 @@
 # B. Deletion Sort
 # https://codeforces.com/contest/2200/problem/B
-# rating: ?
+# rating: 800
 
 t = int(input())
 

@@ -1,6 +1,6 @@
 # F. The 67th Tree Problem
 # https://codeforces.com/contest/2218/problem/F
-# rating: ?
+# rating: 1500
 
 t = int(input())
 

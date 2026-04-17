@@ -1,6 +1,6 @@
 # A. Towers of Boxes
 # https://codeforces.com/contest/2203/problem/A
-# rating: ?
+# rating: 800
 
 import math
 

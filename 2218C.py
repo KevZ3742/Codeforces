@@ -1,6 +1,6 @@
 # C. The 67th Permutation Problem
 # https://codeforces.com/contest/2218/problem/C
-# rating: ?
+# rating: 800
 
 t = int(input())
 

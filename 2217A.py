@@ -1,6 +1,6 @@
 # A. The Equalizer
 # https://codeforces.com/contest/2217/problem/A
-# rating: ?
+# rating: 800
 
 t = int(input())
 

@@ -1,6 +1,6 @@
 # C. Specialty String
 # https://codeforces.com/contest/2200/problem/C
-# rating: ?
+# rating: 900
 
 t = int(input())
 

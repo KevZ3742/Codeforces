@@ -1,6 +1,6 @@
 # C. Find the Zero
 # https://codeforces.com/contest/2209/problem/C
-# rating: ?
+# rating: 1400
 
 t = int(input())
 

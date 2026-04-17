@@ -1,6 +1,6 @@
 # A. The 67th Integer Problem
 # https://codeforces.com/contest/2218/problem/A
-# rating: ?
+# rating: 800
 
 t = int(input())
 

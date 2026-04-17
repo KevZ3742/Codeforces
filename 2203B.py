@@ -1,6 +1,6 @@
 # B. Beautiful Numbers
 # https://codeforces.com/contest/2203/problem/B
-# rating: ?
+# rating: 1000
 
 t = int(input())
 

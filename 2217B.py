@@ -1,6 +1,6 @@
 # B. Flip the Bit (Easy Version)
 # https://codeforces.com/contest/2217/problem/B
-# rating: ?
+# rating: 1000
 
 t = int(input())
 

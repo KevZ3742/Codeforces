@@ -1,6 +1,6 @@
 # D. Portal
 # https://codeforces.com/contest/2200/problem/D
-# rating: ?
+# rating: 1300
 
 t = int(input())
 

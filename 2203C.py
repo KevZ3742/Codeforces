@@ -1,6 +1,6 @@
 # C. Test Generator
 # https://codeforces.com/contest/2203/problem/C
-# rating: ?
+# rating: 1500
 
 t = int(input())
 

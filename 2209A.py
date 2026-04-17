@@ -1,6 +1,6 @@
 # A. Flip Flops
 # https://codeforces.com/contest/2209/problem/A
-# rating: ?
+# rating: 800
 
 t = int(input())
 

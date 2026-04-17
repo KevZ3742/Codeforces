@@ -1,6 +1,6 @@
 # B. Array
 # https://codeforces.com/contest/2209/problem/B
-# rating: ?
+# rating: 900
 
 t = int(input())
 

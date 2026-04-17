@@ -1,6 +1,6 @@
 # E. Divisive Battle
 # https://codeforces.com/contest/2200/problem/E
-# rating: ?
+# rating: 1500
 
 import math
 

@@ -1,6 +1,6 @@
 # A. Eating Game
 # https://codeforces.com/contest/2200/problem/A
-# rating: ?
+# rating: 800
 
 t = int(input())
 
