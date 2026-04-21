@@ -1,3 +1,6 @@
+# F. Finished with Mining
+# https://codeforces.com/group/EW9LgKVDr6/contest/687333/problem/F
+
 def genSpiral(n):
     positions = {}
     positions[(0, 0)] = 1
