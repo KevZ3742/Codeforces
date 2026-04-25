@@ -1,3 +1,7 @@
+// A. Pythagorean Theorem II
+// https://codeforces.com/contest/304/problem/A
+// rating: 1200
+
 #include <bits/stdc++.h>
 using namespace std;
 
