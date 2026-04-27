@@ -2,30 +2,30 @@
 # https://codeforces.com/contest/2148/problem/F
 # rating: 1800
 
+from collections import deque
+
 t = int(input())
 
 for _ in range(t):
     n = int(input())
 
     stacks = []
-    size = []
     for i in range(n):
         a = list(map(int, input().split()))
-        size.append(a[0])
-        stacks.append(a[1:])
+        stacks.append(deque(a[1:]))
 
-    size = max(size)
+    stacks.sort(key=lambda x: -len(x))
 
     toPrint = []
-    while len(toPrint) < size:
-        stacks.sort()
-        toPrint += stacks[0]
+    while stacks:
+        toAppend = min(stacks)
+        toPrint += toAppend
+
+        while stacks and len(stacks[-1]) <= len(toAppend):
+            stacks.pop()
 
         for i in range(len(stacks)):
-            stacks[i] = stacks[i][len(toPrint):]
-
-        stacks = list(filter(None, stacks))
+            for j in range(len(toAppend)):
+                stacks[i].popleft()
 
     print(*toPrint)
-
-# wip
