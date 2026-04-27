@@ -6,7 +6,7 @@ t = int(input())
 
 for _ in range(t):
     n, d, h = map(int, input().split())
-    y = list(map(int, input().split()))\
+    y = list(map(int, input().split()))
     
     toAdd = d * h / 2
     toPrint = toAdd
