@@ -1,6 +1,6 @@
 # A. Sereja and Dima
 # https://codeforces.com/contest/381/problem/A
-# Rating: 800
+# rating: 800
 
 n = int(input())
 a = list(map(int, input().split()))
