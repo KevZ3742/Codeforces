@@ -14,8 +14,6 @@ for _ in range(t):
         prefixDiff.append(a[i] - prev)
         prev = a[i]
 
-    
-
     maxLen = 0
     cur = 1
     for prefix in prefixDiff:
