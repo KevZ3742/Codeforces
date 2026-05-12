@@ -29,7 +29,7 @@ for _ in range(t):
         else:
             chosen = -1
             for v in free:
-                if v != forbidden :
+                if v != forbidden:
                     chosen = v
                     break
             if chosen == -1:
