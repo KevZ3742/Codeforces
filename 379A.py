@@ -4,10 +4,14 @@
 
 a, b = map(int, input().split())
 
-toPrint = 0
+hours = 0
+leftovers = 0
 
 while a > 0:
-    toPrint += a
-    a //= b
+    hours += a
+    leftovers += a
 
-print(toPrint)
+    a = leftovers // b
+    leftovers %= b
+
+print(hours)
